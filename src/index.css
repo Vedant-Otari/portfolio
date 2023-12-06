@@ -8,3 +8,13 @@ html {
   box-sizing: border-box;
 }
 
+.hero-img{
+  background-image: url('../src/assests/images/hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+li .menu-button{
+  @apply text-white px-10 rounded-b-xl hover:bg-slate-500 py-8 duration-500 mx-6;
+}
