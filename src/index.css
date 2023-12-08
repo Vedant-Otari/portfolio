@@ -6,15 +6,13 @@ body,
 html {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .hero-img{
-  background-image: url('../src/assests/images/hero-img.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url('../src/assests/images/hero-img.png');
 }
 
 li .menu-button{
-  @apply text-white px-10 rounded-b-xl hover:bg-slate-500 py-8 duration-500 mx-6;
+  @apply hover:text-white px-10 rounded-b-xl hover:bg-slate-500 py-8 duration-500 mx-6;
 }
