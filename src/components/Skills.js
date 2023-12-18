@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../assests/utils/skills";
+import { skills } from "../assests/utils/skillsList";
 
 export default function Skills() {
   return (
