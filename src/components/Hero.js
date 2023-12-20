@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="hero-img bg-cover bg-left-bottom sm:bg-top landscape:bg-top bg-no-repeat bg-primary lg:bg-none flex justify-center landscape:w-full bg-fixed h-screen">
+    <section id="hero" className="hero-img bg-cover bg-left-bottom sm:bg-top landscape:bg-top bg-no-repeat bg-primary lg:bg-none flex justify-center landscape:w-full bg-fixed h-screen">
       <div className="flex w-full justify-center overflow-hidden flex-col lg:flex-row">
         <div className="pt-20 lg:pt-0 lg:w-2/3 flex justify-center flex-col px-7 lg:px-14">
           <motion.div

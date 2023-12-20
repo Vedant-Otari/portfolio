@@ -6,9 +6,9 @@ export default function Header() {
     <header className="z-10 top-0 fixed">
       <IoMenuOutline className="bg-transparent lg:hidden rounded-full text-5xl m-3 duration-500 hover:bg-slate-300 p-1" />
       <nav>
-        <li className="hidden lg:block text-gray-700 w-screen border-b-[1px] h-full px-8 py-5 bg-primary">
+        <li className="hidden lg:block text-gray-700 w-screen h-full px-8 py-5 bg-primary bg-opacity-70">
           <a className="menu-button" href="#hero">
-            Top
+            Home
           </a>
           <a className="menu-button" href="#about">
             About
