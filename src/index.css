@@ -14,5 +14,9 @@ html {
 }
 
 li .menu-button{
-  @apply hover:text-white px-10 rounded-b-xl hover:bg-slate-500 py-8 duration-500 mx-6;
+  @apply hover:text-white px-10 rounded-xl hover:bg-tertiary py-3 duration-300 mx-6;
+}
+
+.active-component{
+  @apply text-white bg-secondary font-semibold
 }
