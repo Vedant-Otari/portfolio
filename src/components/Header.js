@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IoMenuOutline } from "react-icons/io5";
+// import { IoMenuOutline } from "react-icons/io5";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState(null);
@@ -37,11 +37,11 @@ export default function Header() {
 
   return (
     <header className="z-10 top-0 fixed">
-      <IoMenuOutline className="bg-transparent lg:hidden rounded-full text-5xl m-3 duration-100 active:bg-tertiary active:text-white p-1" />
+      {/* <IoMenuOutline onClick={()=>{headerOpen?setHeaderOpen(false):setHeaderOpen(true)}} className="bg-transparent lg:hidden rounded-full text-5xl m-3 duration-100 active:bg-tertiary active:text-white p-1" /> */}
       <nav>
         <li
           id="header_list"
-          className="hidden lg:block text-lg list-none uppercase duration-500 text-secondary w-screen px-8 py-5 font-medium bg-primary bg-opacity-100"
+          className="flex justify-evenly lg:block md:text-lg text-sm list-none uppercase duration-500 text-secondary w-screen md:px-8 md:py-5 py-3 font-medium bg-primary bg-opacity-100"
         >
           <a
             className={`menu-button ${

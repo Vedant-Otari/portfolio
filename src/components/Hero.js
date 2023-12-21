@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
         <div className="hidden lg:block w-2/5 bg-transparent relative">
           <img className="object-contain object-bottom scale-150 top-10 h-full w-full absolute" src={blob2} alt="" />
-          <img className="object-contain object-center h-full w-full scale-150 top-20 absolute" src={blob1} alt="" />
+          <img className="object-contain object-center h-full w-full scale-150 top-28 absolute" src={blob1} alt="" />
           {/* <img className="object-contain top-10 h-full w-full scale-110 object-bottom pt-10 absolute" src={blob3} alt="" /> */}
           <img className="object-cover scale-125 object-left h-full w-full absolute" src={img} alt="" />
         </div>

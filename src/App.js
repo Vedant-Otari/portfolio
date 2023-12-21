@@ -19,16 +19,17 @@ function App() {
   }, []);
 
   return (
+    <><AnimatedCursor
+    innerSize={16}
+    outerSize={25}
+    color="92, 131, 156"
+    // trailingSpeed={2000}
+    outerAlpha={0.2}
+    innerScale={0.7}
+    outerScale={2}
+  />
     <AnimatePresence mode="wait">
-      <AnimatedCursor
-        innerSize={20}
-        outerSize={25}
-        color="92, 131, 156"
-        trailingSpeed={10}
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={2}
-      />
+      
       {preloader ? (
         <motion.div
           key="preloader"
@@ -67,6 +68,8 @@ function App() {
         </motion.div>
       )}
     </AnimatePresence>
+    
+    </>
   );
 }
 

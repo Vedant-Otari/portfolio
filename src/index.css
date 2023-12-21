@@ -14,9 +14,31 @@ html {
 }
 
 li .menu-button{
-  @apply hover:text-white px-10 rounded-xl hover:bg-tertiary py-3 duration-300 mx-6;
+  @apply hover:text-white touch-manipulation md:px-10 px-2 rounded-xl hover:bg-tertiary md:py-3 py-1 duration-300 md:mx-6;
 }
 
 .active-component{
   @apply text-white bg-secondary font-semibold
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-primary
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary
+  /* border-radius: 5px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
