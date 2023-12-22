@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.98e381ee.css",
+    "main.js": "/portfolio/static/js/main.13c118e7.js",
+    "static/media/hero-img.png": "/portfolio/static/media/hero-img.f5bd636d4ef889a3cab0.png",
+    "static/media/vending_machine.jpg": "/portfolio/static/media/vending_machine.a3cebffc74c3f9e7cf74.jpg",
+    "static/media/BestDeal.jpg": "/portfolio/static/media/BestDeal.d9e10b25249ea713942d.jpg",
+    "static/media/about-img.jpg": "/portfolio/static/media/about-img.c3eb51e8209d3a6451f9.jpg",
+    "static/media/defaultImage.png": "/portfolio/static/media/defaultImage.6988980f46d4055ce61b.png",
+    "static/media/cpp.svg": "/portfolio/static/media/cpp.a776a608546a79750b150829bc9b099e.svg",
+    "static/media/c.svg": "/portfolio/static/media/c.21a8fab81e76bf019238a55c1c88198c.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/material-ui.svg": "/portfolio/static/media/material-ui.fd510ed8518b192069590b04e2e6348a.svg",
+    "static/media/blob2.svg": "/portfolio/static/media/blob2.af66cc8b751881597e3f71e177efc36c.svg",
+    "static/media/blob1.svg": "/portfolio/static/media/blob1.ccfead5cf3d2a32a244f82222f9b0bf4.svg",
+    "main.98e381ee.css.map": "/portfolio/static/css/main.98e381ee.css.map",
+    "main.13c118e7.js.map": "/portfolio/static/js/main.13c118e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98e381ee.css",
+    "static/js/main.13c118e7.js"
+  ]
+}
