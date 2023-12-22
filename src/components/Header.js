@@ -41,7 +41,7 @@ export default function Header() {
       <nav>
         <li
           id="header_list"
-          className="flex justify-evenly lg:block md:text-lg text-sm list-none uppercase duration-500 text-secondary w-screen md:px-8 md:py-5 py-3 font-medium bg-primary bg-opacity-100"
+          className="flex justify-evenly transition-colors lg:justify-start md:text-lg text-sm list-none uppercase duration-[500] text-secondary w-screen md:px-8 py-1 font-medium bg-primary bg-opacity-100"
         >
           <a
             className={`menu-button ${

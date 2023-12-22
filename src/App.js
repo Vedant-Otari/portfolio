@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
+
   const [preloader, setPreloader] = useState(true);
 
   useEffect(() => {
@@ -23,8 +24,8 @@ function App() {
     innerSize={16}
     outerSize={25}
     color="92, 131, 156"
-    // trailingSpeed={2000}
-    outerAlpha={0.2}
+    trailingSpeed={5}
+    outerAlpha={0.3}
     innerScale={0.7}
     outerScale={2}
   />
