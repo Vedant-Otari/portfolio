@@ -13,8 +13,12 @@ export default function About() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 ">
         <div></div>
-        <img className="md:row-start-1 mx-auto md:col-start-1 md:col-end-3 w-1/3 lg:w-1/4 rounded-xl my-6 md:my-0" src={img} alt="Profile" />
-        <div className="flex flex-col md:row-start-2 md:col-start-1 col-end-3 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:w-full md:w-2/3 py-5 mx-auto px-7">
+        <img
+          className="md:row-start-1 mx-auto md:col-start-1 md:col-end-3 w-1/3 lg:w-1/4 rounded-xl my-6 md:my-0"
+          src={img}
+          alt="Profile"
+        />
+        <div className="flex lg:text-lg flex-col md:row-start-2 md:col-start-1 col-end-3 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:w-full md:w-2/3 py-5 mx-auto px-7">
           <div className="py-2">
             <span className="font-semibold">Name: </span>
             <span className="font-normal text-gray-500">
@@ -84,13 +88,13 @@ export default function About() {
             </span>
           </div>
         </div>
-        <div className="md:row-start-3 md:col-start-1 md:col-end-4 h-fit bg-secondary flex w-full px-5 py-3 md:py-4 justify-around text-3xl">
+        <div></div>
+        <div className="md:row-start-4 md:col-start-1 md:col-end-4 h-fit bg-secondary flex w-full px-5 py-3 md:py-4 justify-around text-3xl">
           <a
             href="https://www.linkedin.com/in/vedant-otari/ "
             rel="noreferrer"
             target="_blank"
             title="LinkedIn"
-            className="w-1/3"
           >
             <FaLinkedin className="text-white hover:text-blue-500 hover:text-4xl duration-300" />
           </a>
@@ -99,7 +103,6 @@ export default function About() {
             rel="noreferrer"
             target="_blank"
             title="Github"
-            className="w-1/3"
           >
             <FaGithubSquare className="text-white hover:text-gray-700 hover:text-4xl duration-300 " />
           </a>
@@ -108,16 +111,11 @@ export default function About() {
             rel="noreferrer"
             target="_blank"
             title="Leetcode"
-            className="w-1/3"
           >
             <SiLeetcode className="text-white  hover:text-orange-500 hover:text-4xl duration-300 " />
           </a>
         </div>
-        <motion.article
-        initial={{x:'-100%'}}
-        animate={{x:0}}
-        transition={{duration:3}}        
-        className="p-5 md:rounded-tl-3xl bg-tertiary md:col-start-3 md:row-start-1 md:row-end-3 flex items-center md:text-left md:p-10 text-white mx-auto md:text-xl text-center">
+        <article className="p-5 w-screen md:w-auto md:rounded-tl-3xl bg-tertiary md:col-start-3 md:row-start-1 md:row-end-3 flex items-center md:text-left md:p-10 text-white mx-auto md:text-xl text-center">
           Committed to enhancing organizational excellence, I aspire to embody
           the company culture, amplify my skills, and become an indispensable
           contributor.
@@ -126,7 +124,7 @@ export default function About() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
           soluta! Molestiae nesciunt fugit iure maxime, iste labore! Maiores,
           alias necessitatibus?
-        </motion.article>
+        </article>
       </div>
     </section>
   );
