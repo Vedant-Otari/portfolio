@@ -14,11 +14,26 @@ html {
 }
 
 li .menu-button{
-  @apply hover:text-white touch-manipulation md:px-10 px-2 rounded-xl hover:bg-tertiary md:py-3 py-1 duration-300 md:mx-6;
+  @apply active:scale-110 md:px-10 px-2 rounded-xl md:py-3 py-1 duration-300 md:mx-6;
 }
 
 .active-component{
   @apply text-white bg-secondary font-semibold
+}
+
+@media (pointer:fine) { /* For pointer devices */
+  li .menu-button{
+    @apply hover:text-white hover:bg-tertiary 
+  }
+  .skill-hover{
+    @apply  group-hover:visible group-hover:h-full
+  }
+}
+
+@media (pointer:coarse) { /* For touchscreen devices */
+  .skill-hover{
+    @apply  group-active:visible group-active:h-full
+  }
 }
 
 

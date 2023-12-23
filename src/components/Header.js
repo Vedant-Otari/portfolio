@@ -1,29 +1,64 @@
 import React, { useState, useEffect } from "react";
-// import { IoMenuOutline } from "react-icons/io5";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState(null);
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY;
+  //   const header_list = document.getElementById("header_list");
+  //   if (scrollPosition > window.innerHeight * 0.2 && header_list)
+  //     header_list.classList.add("shadow-md");
+  //   if (scrollPosition === 0 && header_list) header_list.classList.remove("shadow-md");
+  //   const aboutOffset =
+  //     document.getElementById("about").offsetTop - window.innerHeight * 0.4;
+  //   const projectsOffset =
+  //     document.getElementById("projects").offsetTop - window.innerHeight * 0.4;
+  //   const contactOffset =
+  //     document.getElementById("contact").offsetTop - window.innerHeight * 0.4;
+
+  //   if (scrollPosition < aboutOffset) {
+  //     setActiveLink("hero");
+  //   } else if (scrollPosition < projectsOffset) {
+  //     setActiveLink("about");
+  //   } else if (scrollPosition < contactOffset) {
+  //     setActiveLink("projects");
+  //   } else {
+  //     setActiveLink("contact");
+  //   }
+  // };
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
+  
+    // Check if header_list exists before accessing its classList
     const header_list = document.getElementById("header_list");
-    if (scrollPosition > window.innerHeight * 0.2)
-      header_list.classList.add("shadow-md");
-    if (scrollPosition === 0) header_list.classList.remove("shadow-md");
-    const aboutOffset =
-      document.getElementById("about").offsetTop - window.innerHeight * 0.4;
-    const projectsOffset =
-      document.getElementById("projects").offsetTop - window.innerHeight * 0.4;
-    const contactOffset =
-      document.getElementById("contact").offsetTop - window.innerHeight * 0.4;
-
-    if (scrollPosition < aboutOffset) {
-      setActiveLink("hero");
-    } else if (scrollPosition < projectsOffset) {
-      setActiveLink("about");
-    } else if (scrollPosition < contactOffset) {
-      setActiveLink("projects");
-    } else {
-      setActiveLink("contact");
+    if (header_list) {
+      if (scrollPosition > window.innerHeight * 0.2) {
+        header_list.classList.add("shadow-md");
+      }
+      if (scrollPosition === 0) {
+        header_list.classList.remove("shadow-md");
+      }
+    }
+  
+    // Check if the elements exist before accessing their offsetTop properties
+    const aboutElement = document.getElementById("about");
+    const projectsElement = document.getElementById("projects");
+    const contactElement = document.getElementById("contact");
+  
+    if (aboutElement && projectsElement && contactElement) {
+      const aboutOffset = aboutElement.offsetTop - window.innerHeight * 0.4;
+      const projectsOffset = projectsElement.offsetTop - window.innerHeight * 0.4;
+      const contactOffset = contactElement.offsetTop - window.innerHeight * 0.4;
+  
+      if (scrollPosition < aboutOffset) {
+        setActiveLink("hero");
+      } else if (scrollPosition < projectsOffset) {
+        setActiveLink("about");
+      } else if (scrollPosition < contactOffset) {
+        setActiveLink("projects");
+      } else {
+        setActiveLink("contact");
+      }
     }
   };
 
@@ -36,12 +71,10 @@ export default function Header() {
   useEffect(() => handleScroll, []);
 
   return (
-    <header className="z-10 top-0 fixed">
-      {/* <IoMenuOutline onClick={()=>{headerOpen?setHeaderOpen(false):setHeaderOpen(true)}} className="bg-transparent lg:hidden rounded-full text-5xl m-3 duration-100 active:bg-tertiary active:text-white p-1" /> */}
-      <nav>
+    <header className="z-10 top-0 fixed"><nav>
         <li
           id="header_list"
-          className="flex justify-evenly transition-colors lg:justify-start md:text-lg text-sm list-none uppercase duration-[500] text-secondary w-screen md:px-8 py-1 font-medium bg-primary bg-opacity-100"
+          className="flex justify-evenly transition-colors lg:justify-start md:text-lg text-sm list-none uppercase duration-[500] text-secondary w-screen md:px-8 py-2 font-medium bg-primary bg-opacity-70 backdrop-blur-sm"
         >
           <a
             className={`menu-button ${

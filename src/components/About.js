@@ -84,33 +84,33 @@ export default function About() {
             </span>
           </div>
         </div>
-        <div className="md:col-start-1 md:col-end-4 md:row-start-3 md:row-end-4 bg-secondary flex w-full justify-around text-3xl">
+        <div className="md:col-start-1 items-center md:col-end-4 md:row-start-3 md:row-end-4 bg-secondary flex w-full justify-around text-3xl">
           <a
             href="https://www.linkedin.com/in/vedant-otari/ "
             rel="noreferrer"
             target="_blank"
             title="LinkedIn"
-            className="w-full flex justify-center px-5 py-3 md:py-4 hover:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
           >
-            <FaLinkedin className="text-white hover:text-blue-500 hover:text-4xl duration-300" />
+            <FaLinkedin className="text-white w-full group-active:text-blue-500 duration-300" />
           </a>
           <a
             href="https://github.com/Vedant-Otari// "
             rel="noreferrer"
             target="_blank"
             title="Github"
-            className="w-full flex justify-center px-5 py-3 md:py-4 hover:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
           >
-            <FaGithubSquare className="text-white hover:text-gray-700 hover:text-4xl duration-300 " />
+            <FaGithubSquare className="text-white group-active:text-gray-400 duration-300 " />
           </a>
           <a
             href="https://leetcode.com/Vedant_Otari/ "
             rel="noreferrer"
             target="_blank"
             title="Leetcode"
-            className="w-full flex justify-center px-5 py-3 md:py-4 hover:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
           >
-            <SiLeetcode className="text-white  hover:text-orange-500 hover:text-4xl duration-300 " />
+            <SiLeetcode className="text-white group-active:text-orange-500 duration-300 " />
           </a>
         </div>
         <article className="md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3 p-5 md:rounded-tl-3xl bg-tertiary flex items-center md:text-left md:p-10 text-white mx-auto md:text-xl text-center">
