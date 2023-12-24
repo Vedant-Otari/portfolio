@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.47ab0a6c.css",
-    "main.js": "/portfolio/static/js/main.6f568ac6.js",
-    "static/media/hero-img.png": "/portfolio/static/media/hero-img.f5bd636d4ef889a3cab0.png",
+    "main.css": "/portfolio/static/css/main.1f0ff6ec.css",
+    "main.js": "/portfolio/static/js/main.c64f61f2.js",
+    "static/media/hero-img.png": "/portfolio/static/media/hero-img.853b4d2d732e821f2956.png",
     "static/media/vending_machine.jpg": "/portfolio/static/media/vending_machine.a3cebffc74c3f9e7cf74.jpg",
-    "static/media/Vedant_Otari_resume.pdf": "/portfolio/static/media/Vedant_Otari_resume.83fa859ed0c762eefdf2.pdf",
+    "static/media/Vedant_Otari_resume.pdf": "/portfolio/static/media/Vedant_Otari_resume.d29f24ef143ddaa277a6.pdf",
     "static/media/BestDeal.jpg": "/portfolio/static/media/BestDeal.d9e10b25249ea713942d.jpg",
-    "static/media/about-img.jpg": "/portfolio/static/media/about-img.c3eb51e8209d3a6451f9.jpg",
+    "static/media/about-img.jpg": "/portfolio/static/media/about-img.ac7592c04578402b26e1.jpg",
     "static/media/defaultImage.png": "/portfolio/static/media/defaultImage.6988980f46d4055ce61b.png",
     "static/media/cpp.svg": "/portfolio/static/media/cpp.a776a608546a79750b150829bc9b099e.svg",
     "static/media/c.svg": "/portfolio/static/media/c.21a8fab81e76bf019238a55c1c88198c.svg",
+    "static/media/agile.svg": "/portfolio/static/media/agile.496f36cd704226228fe1288a77b161e8.svg",
     "index.html": "/portfolio/index.html",
-    "static/media/wave1.svg": "/portfolio/static/media/wave1.8c929676ccca07f680875d094b2936dc.svg",
     "static/media/material-ui.svg": "/portfolio/static/media/material-ui.fd510ed8518b192069590b04e2e6348a.svg",
-    "static/media/wave2.svg": "/portfolio/static/media/wave2.0ee8430a75a5780fa20063ca56131670.svg",
+    "static/media/wave2.svg": "/portfolio/static/media/wave2.0be0fbe2f91de670d2509059731a5912.svg",
+    "static/media/wave1.svg": "/portfolio/static/media/wave1.30ce5169e2bb7716b4a0cdcc467b8621.svg",
     "static/media/blob2.svg": "/portfolio/static/media/blob2.af66cc8b751881597e3f71e177efc36c.svg",
     "static/media/blob1.svg": "/portfolio/static/media/blob1.ccfead5cf3d2a32a244f82222f9b0bf4.svg",
-    "main.47ab0a6c.css.map": "/portfolio/static/css/main.47ab0a6c.css.map",
-    "main.6f568ac6.js.map": "/portfolio/static/js/main.6f568ac6.js.map"
+    "main.1f0ff6ec.css.map": "/portfolio/static/css/main.1f0ff6ec.css.map",
+    "main.c64f61f2.js.map": "/portfolio/static/js/main.c64f61f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ab0a6c.css",
-    "static/js/main.6f568ac6.js"
+    "static/css/main.1f0ff6ec.css",
+    "static/js/main.c64f61f2.js"
   ]
 }
