@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
-  const [preloader, setPreloader] = useState(false);
+  const [preloader, setPreloader] = useState(true);
   const [istouch, setIstouch] = useState(false);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function App() {
 
     const timeoutId = setTimeout(() => {
       setPreloader(false);
-    }, 5200);
+    }, 5000);
     return () => clearTimeout(timeoutId);
   }, []);
 

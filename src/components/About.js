@@ -7,8 +7,8 @@ import { SiLeetcode } from "react-icons/si";
 
 export default function About() {
   return (
-    <section className="bg-white pt-6 md:pt-14" id="about">
-      <h2 className="text-center text-4xl md:mb-8 md:text-5xl md:py-3">
+    <section className="bg-white pt-14 md:pt-16" id="about">
+      <h2 className="text-center font-bold text-secondary md:mb-8  text-3xl md:text-5xl  md:py-3">
         About Me
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-[auto auto auto]">

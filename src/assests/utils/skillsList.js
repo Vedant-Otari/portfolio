@@ -7,6 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 import CLogo from "../images/c.svg"
 import CPPLogo from "../images/cpp.svg"
 import MaterialUi from "../images/material-ui.svg"
+import agile from "../images/agile.svg"
 // import { FaAws } from "react-icons/fa";
 
 export const skills = [
@@ -18,6 +19,7 @@ export const skills = [
     { name: "JavaScript", icon: <IoLogoJavascript className="text-yellow-400"/> },
     { name: "Mongodb", icon: <SiMongodb className="text-green-500"/> },
     { name: "Tailwindcss", icon: <SiTailwindcss className="text-cyan-500"/> },
-    { name: "Material UI", icon: <img className="h-24" alt="CPP logo" src={MaterialUi}/>},
+    { name: "Material UI", icon: <img className="h-24" alt="Material UI" src={MaterialUi}/>},
+    { name: "Agile", icon: <img className="h-24" alt="Agile" src={agile}/>},
     // { name: "Docker", icon: <FaDocker className="text-blue-600"/> },
 ];

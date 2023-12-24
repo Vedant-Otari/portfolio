@@ -2,34 +2,10 @@ import React, { useState, useEffect } from "react";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState(null);
-  // const handleScroll = () => {
-  //   const scrollPosition = window.scrollY;
-  //   const header_list = document.getElementById("header_list");
-  //   if (scrollPosition > window.innerHeight * 0.2 && header_list)
-  //     header_list.classList.add("shadow-md");
-  //   if (scrollPosition === 0 && header_list) header_list.classList.remove("shadow-md");
-  //   const aboutOffset =
-  //     document.getElementById("about").offsetTop - window.innerHeight * 0.4;
-  //   const projectsOffset =
-  //     document.getElementById("projects").offsetTop - window.innerHeight * 0.4;
-  //   const contactOffset =
-  //     document.getElementById("contact").offsetTop - window.innerHeight * 0.4;
-
-  //   if (scrollPosition < aboutOffset) {
-  //     setActiveLink("hero");
-  //   } else if (scrollPosition < projectsOffset) {
-  //     setActiveLink("about");
-  //   } else if (scrollPosition < contactOffset) {
-  //     setActiveLink("projects");
-  //   } else {
-  //     setActiveLink("contact");
-  //   }
-  // };
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
   
-    // Check if header_list exists before accessing its classList
     const header_list = document.getElementById("header_list");
     if (header_list) {
       if (scrollPosition > window.innerHeight * 0.2) {
@@ -40,7 +16,6 @@ export default function Header() {
       }
     }
   
-    // Check if the elements exist before accessing their offsetTop properties
     const aboutElement = document.getElementById("about");
     const projectsElement = document.getElementById("projects");
     const contactElement = document.getElementById("contact");
@@ -62,6 +37,12 @@ export default function Header() {
     }
   };
 
+  const handleClick = (event, targetId) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if(targetElement)targetElement.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -81,6 +62,7 @@ export default function Header() {
               activeLink === "hero" ? "active-component" : ""
             }`}
             href="#hero"
+            onClick={(e) => handleClick(e, 'hero')}
           >
             Home
           </a>
@@ -89,6 +71,7 @@ export default function Header() {
               activeLink === "about" ? "active-component" : ""
             }`}
             href="#about"
+            onClick={(e) => handleClick(e, 'about')}
           >
             About
           </a>
@@ -97,6 +80,7 @@ export default function Header() {
               activeLink === "projects" ? "active-component" : ""
             }`}
             href="#projects"
+            onClick={(e) => handleClick(e, 'projects')}
           >
             Projects
           </a>
@@ -105,6 +89,7 @@ export default function Header() {
               activeLink === "contact" ? "active-component" : ""
             }`}
             href="#contact"
+            onClick={(e) => handleClick(e, 'contact')}
           >
             Contact
           </a>
