@@ -13,8 +13,8 @@ export default function Contact() {
       className="bg-secondary flex flex-col justify-between pt-16 lg:pt-24 min-h-[62vh]"
     >
       <div>
-        <h2 class="mb-4  text-3xl md:text-5xl  font-bold text-center text-white">Contact</h2>
-        <p class="mb-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">
+        <h2 className="mb-4  text-3xl md:text-5xl  font-bold text-center text-white">Contact</h2>
+        <div className="mb-8 lg:mb-16 font-light text-center text-gray-400 sm:text-xl">
           Here are my some of my social links. Feel free to contact me.
           <div className="text-white pt-10 w-fit mx-auto">
             <a
@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
             </a>
           </div>
-        </p>
+        </div>
       </div>
       <div className="relative">
         <img className="absolute scale-x-[-1] opacity-90" src={wave2} alt="" />

@@ -9,10 +9,12 @@ import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
-  const [preloader, setPreloader] = useState(true);
+  const [preloader, setPreloader] = useState(false);
   const [istouch, setIstouch] = useState(false);
 
   useEffect(() => {
+    console.log("%cThis is Portfolio Website of 'Vedant Otari.'","font-size: 20px;font-weight:800;","\n\nFind me on:\n\nLinkedIn: https://www.linkedin.com/in/vedant-otari/\n\nGithub: https://github.com/Vedant-Otari\n\nLeetCode: https://leetcode.com/Vedant_Otari/\n\nMail me at: vedantmotari24@gmail.com");
+
     setIstouch(
       "ontouchstart" in window ||
         navigator.maxTouchPoints > 0 ||

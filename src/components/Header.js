@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState("hero");
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -49,7 +49,6 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  useEffect(() => handleScroll, []);
 
   return (
     <header className="z-10 top-0 fixed"><nav>

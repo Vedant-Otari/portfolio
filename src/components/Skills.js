@@ -11,7 +11,7 @@ export default function Skills() {
         {skills.map((skill) => (
           <div key={skill.name} className="select-none flex flex-col group relative">
             <div className="p-4 bg-slate-100 w-full h-full items-center text-8xl justify-center flex">{skill.icon}</div>
-            <p className="bg-gray-700 bg-opacity-50 absolute bottom-0 right-0 left-0 h-0 skill-hover duration-300 invisible flex items-center justify-center text-3xl py-2 text-white">{skill.name}</p>
+            <p className="bg-gray-700 bg-opacity-50 absolute bottom-0 right-0 left-0 h-0 skill-hover duration-300 invisible flex items-center justify-center text-lg md:text-2xl py-2 text-white">{skill.name}</p>
           </div>
         ))}
       </section>
