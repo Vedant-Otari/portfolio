@@ -1,6 +1,8 @@
 import bestdeal from "../images/BestDeal.jpg";
 import vendingMachine from "../images/vending_machine.jpg";
 import defaultImg from "../images/defaultImage.png";
+import uassist from "../images/uassist.png";
+
 
 export const projects = [
   {
@@ -12,25 +14,31 @@ export const projects = [
   {
     image: vendingMachine,
     name: "Vending Machine Simulator",
-    description: "Vending Machine is a simulation of an actual vending machine",
-    tech: ["HTML", "CSS", "dfads"],
+    description: "Vending Machine is a web simulation of an actual vending machine.",
+    tech: ["HTML", "CSS", "Oracle Database"],
   },
   {
     image: defaultImg,
     name: "MIARS",
-    description: "Vending Machine is a simulation of an actual vending machine",
-    tech: ["HTML", "CSS", "dfads"],
+    description: "Stands for 'Movie Info and Rating System' is desktop application for movie details.",
+    tech: ["PostgresSQL", "Netbeans", "Java"],
+  },
+  {
+    image: uassist,
+    name: "uAssist",
+    description: "uAssist is a android application comprising of 5 small day-to-day applications like notepad, todo list, etc.",
+    tech: ["Android Studio", "Java"],
   },
   {
     image: defaultImg,
     name: "CloneTubes",
-    description: "CloneTubes is a clone of Youtube. The data is accessed through RapidAPI.",
-    tech: ["react", "", "Tailwind"],
+    description: "CloneTubes is a clone of Youtube application. The data is accessed through RapidAPI.",
+    tech: ["React", "Axios", "Material UI"],
   },
   {
     image: defaultImg,
     name: "MyDocs",
-    description: "this is bestdeal4",
-    tech: ["react", "mongoDB", "Tailwind"],
+    description: "MyDocs is a website application to create, edit, and store documents.",
+    tech: ["React", "Mongoose", "Socket.IO","Quill text editor"],
   },
 ];

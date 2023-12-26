@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
-  const [preloader, setPreloader] = useState(false);
+  const [preloader, setPreloader] = useState(true);
   const [istouch, setIstouch] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function App() {
 
     const timeoutId = setTimeout(() => {
       setPreloader(false);
-    }, 5000);
+    }, 4800);
     return () => clearTimeout(timeoutId);
   }, []);
 
@@ -55,7 +55,7 @@ function App() {
             <motion.span
               initial={{ opacity: 0, x: "80%" }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 2.4, duration: 2, ease: "easeOut" }}
+              transition={{ delay: 2.1, duration: 2, ease: "easeOut" }}
             >
               Welcome to my Portfolio.
             </motion.span>
@@ -72,7 +72,7 @@ function App() {
               <Hero />
               <About />
               <Skills />
-              <Projects />
+              <Projects istouch={istouch}/>
             </main>
             <footer>
               <Contact />
