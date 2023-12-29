@@ -2,6 +2,8 @@ import bestdeal from "../images/BestDeal.jpg";
 import vendingMachine from "../images/vending_machine.jpg";
 import defaultImg from "../images/defaultImage.png";
 import uassist from "../images/uassist.png";
+import mydocs from "../images/mydocs.png";
+import clonetubes from "../images/clonetubes.png";
 
 
 export const projects = [
@@ -30,13 +32,13 @@ export const projects = [
     tech: ["Android Studio", "Java"],
   },
   {
-    image: defaultImg,
+    image: clonetubes,
     name: "CloneTubes",
     description: "CloneTubes is a clone of Youtube application. The data is accessed through RapidAPI.",
     tech: ["React", "Axios", "Material UI"],
   },
   {
-    image: defaultImg,
+    image: mydocs,
     name: "MyDocs",
     description: "MyDocs is a website application to create, edit, and store documents.",
     tech: ["React", "Mongoose", "Socket.IO","Quill text editor"],

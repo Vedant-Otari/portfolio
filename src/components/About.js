@@ -63,15 +63,6 @@ export default function About() {
             </span>
           </div>
           <div className="py-2">
-            <span className="font-semibold">Phone: </span>
-            <span className="font-normal text-gray-500">
-              {" "}
-              <a rel="noreferrer" href="tel:+91 9049269139" target="_blank">
-                +91 9049269139
-              </a>{" "}
-            </span>
-          </div>
-          <div className="py-2">
             <span className="font-semibold">Location: </span>
             <span className="font-normal text-gray-500">
               <a
@@ -108,6 +99,12 @@ export default function About() {
                 {" "}
                 KIT's College of Engineering, Kolhapur
               </a>{" "}
+            </span>
+          </div>
+          <div className="py-2">
+            <span className="font-semibold">Passout: </span>
+            <span className="font-normal text-gray-500">
+              {" "}2023{" "}
             </span>
           </div>
         </motion.div>
