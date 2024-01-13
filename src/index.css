@@ -50,8 +50,7 @@ li .menu-button{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-secondary
-  /* border-radius: 5px; */
+  @apply bg-secondary rounded-lg
 }
 
 /* Handle on hover */
