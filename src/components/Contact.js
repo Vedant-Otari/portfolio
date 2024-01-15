@@ -40,7 +40,6 @@ export default function Contact() {
               href="https://www.linkedin.com/in/vedant-otari/ "
               rel="noreferrer"
               target="_blank"
-              title="LinkedIn"
               className="w-fit flex justify-center px-5 py-3 md:py-4 group active:text-2xl"
             >
               <div className="flex items-center gap-3">
@@ -52,7 +51,6 @@ export default function Contact() {
               href={resume}
               rel="noreferrer"
               target="_blank"
-              title="LinkedIn"
               className="w-fit flex justify-center px-5 py-3 md:py-4 group active:text-2xl"
             >
               <div className="flex items-center gap-3">
