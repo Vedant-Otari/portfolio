@@ -13,7 +13,7 @@ export default function Hero() {
   const [showButton, setShowButton] = useState(false);
   
   useEffect(() => {
-    let timeout = setTimeout(() => setShowButton(true), 5000);
+    let timeout = setTimeout(() => setShowButton(true), 8000);
   
     const handleScroll = () => {
       clearTimeout(timeout); // Clear the current timeout
