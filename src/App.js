@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
-  const [preloader, setPreloader] = useState(true);
+  const [preloader, setPreloader] = useState(false);
   const [istouch, setIstouch] = useState(false);
 
   useEffect(() => {

@@ -98,7 +98,7 @@ export default function Hero() {
           exit={{opacity:0}}
           transition={{ duration: 0.5 }}
           onClick={(e)=>{handleClick(e, 'about'); setShowButton(false)}}
-          className="from-transparent to-slate-600 hover:scale-105 duration-200 bg-gradient-to-b bg-opacity-30 text-2xl text-center text-white py-10 bottom-0 absolute w-screen z-30"
+          className="from-transparent to-slate-600 hover:scale-105 duration-200 bg-gradient-to-b bg-opacity-30 text-2xl text-center text-white py-24 sm:py-10 bottom-0 absolute w-screen z-30"
         >
           Scroll Down...
         </motion.button>

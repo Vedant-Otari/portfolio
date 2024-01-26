@@ -41,7 +41,6 @@ const EachProject = ({ project, delay, setClickedProject, setShowModal }) => {
   const refProject = useRef(null);
   const projectIsInView = useInView(refProject, {
     once: true,
-    margin: "400px 0px 0px 0px",
   });
   return (
     <motion.div
