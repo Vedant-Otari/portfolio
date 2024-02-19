@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: "-100%" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 0.2 }}
-            className="text-secondary text-7xl lg:text-8xl font-semibold"
+            className="text-secondary poppins text-7xl lg:text-9xl font-semibold"
           >
             I'm Vedant Otari
           </motion.div>

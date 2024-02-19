@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .hero-img{
@@ -25,6 +26,10 @@ li .menu-button{
 
 .active-component{
   @apply text-white bg-secondary font-semibold
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
 }
 
 @media (pointer:fine) { /* For pointer devices */
