@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1577a2ff.css",
-    "main.js": "/portfolio/static/js/main.aecd7286.js",
+    "main.js": "/portfolio/static/js/main.1e85f235.js",
     "static/media/clonetubes.png": "/portfolio/static/media/clonetubes.03a93ab71920287bfcc4.png",
     "static/media/hero-img.png": "/portfolio/static/media/hero-img.853b4d2d732e821f2956.png",
     "static/media/vending_machine.jpg": "/portfolio/static/media/vending_machine.a3cebffc74c3f9e7cf74.jpg",
     "static/media/BestDeal.jpg": "/portfolio/static/media/BestDeal.d9e10b25249ea713942d.jpg",
-    "static/media/Vedant_Otari_resume.pdf": "/portfolio/static/media/Vedant_Otari_resume.4808f97c5798a8164d81.pdf",
+    "static/media/Vedant_Otari_resume.pdf": "/portfolio/static/media/Vedant_Otari_resume.14fbdb51e829d92fafd2.pdf",
     "static/media/mydocs.png": "/portfolio/static/media/mydocs.1505525732cd29783122.png",
     "static/media/uassist.png": "/portfolio/static/media/uassist.9069a0b8db8ac311178a.png",
     "static/media/about-img.jpg": "/portfolio/static/media/about-img.ac7592c04578402b26e1.jpg",
@@ -21,10 +21,10 @@
     "static/media/blob2.svg": "/portfolio/static/media/blob2.af66cc8b751881597e3f71e177efc36c.svg",
     "static/media/blob1.svg": "/portfolio/static/media/blob1.ccfead5cf3d2a32a244f82222f9b0bf4.svg",
     "main.1577a2ff.css.map": "/portfolio/static/css/main.1577a2ff.css.map",
-    "main.aecd7286.js.map": "/portfolio/static/js/main.aecd7286.js.map"
+    "main.1e85f235.js.map": "/portfolio/static/js/main.1e85f235.js.map"
   },
   "entrypoints": [
     "static/css/main.1577a2ff.css",
-    "static/js/main.aecd7286.js"
+    "static/js/main.1e85f235.js"
   ]
 }
