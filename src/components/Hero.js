@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: "-100%" }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 0.2 }}
-            className="text-secondary poppins text-7xl lg:text-9xl font-semibold"
+            className="text-secondary poppins text-6xl lg:text-8xl font-semibold px-10"
           >
             I'm Vedant Otari
           </motion.div>
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 1.5, delay: 1.5 }}
             className="text-slate-400 md:text-slate-600  font-medium text-3xl lg:text-4xl pt-4 pl-1"
           >
-            Developer | Engineer
+            Full-Stack Developer | Software Engineer
           </motion.div>
         </div>
         <div className="hidden lg:block w-2/5 bg-transparent relative">
@@ -57,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: "100%", rotateZ: 45, scale: 1.5 }}
             animate={{ opacity: 1, x: 0, rotateZ: 0 }}
             transition={{
-              delay: 1.8,
+              delay: 1.0,
               duration: 1.5,
               type: "spring",
               stiffness: 50,
@@ -71,7 +71,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: "100%", rotateZ: 45, scale: 1.5 }}
             animate={{ opacity: 1, x: 0, rotateZ: 0 }}
             transition={{
-              delay: 2.3,
+              delay: 1.3,
               duration: 1.5,
               type: "spring",
               stiffness: 50,
@@ -82,9 +82,9 @@ export default function Hero() {
             alt=""
           />
           <motion.img
-            initial={{ opacity: 0, scale: 1.25 }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 3.7, duration: 1.6 }}
+            transition={{ delay: 2, duration: 1.6 }}
             className="object-cover scale-125 object-left h-full w-full absolute"
             src={img}
             alt=""
@@ -98,7 +98,7 @@ export default function Hero() {
           exit={{opacity:0}}
           transition={{ duration: 0.5 }}
           onClick={(e)=>{handleClick(e, 'about'); setShowButton(false)}}
-          className="from-transparent to-slate-600 hover:scale-105 duration-200 bg-gradient-to-b bg-opacity-30 text-2xl text-center text-white py-24 sm:py-10 bottom-0 absolute w-screen z-30"
+          className="from-transparent to-slate-500 hover:scale-110 duration-200 bg-gradient-to-b bg-opacity-30 text-2xl text-center text-white py-32 sm:py-10 bottom-0 absolute w-screen z-30"
         >
           Scroll Down...
         </motion.button>

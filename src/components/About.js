@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import img from "../assests/images/about-img.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
@@ -10,8 +9,6 @@ export default function About() {
   const linkIsInView = useInView(refLinks, { once: true });
   const refInfo = useRef(null);
   const infoIsInView = useInView(refInfo, { once: true });
-  const refPhoto = useRef(null);
-  const photoIsInView = useInView(refPhoto, { once: true });
   const refAbout = useRef(null);
   const aboutIsInView = useInView(refAbout, { once: true });
   return (
@@ -19,19 +16,7 @@ export default function About() {
       <h2 className="text-center font-bold text-secondary md:mb-8  text-3xl md:text-5xl  md:py-3">
         About Me
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-[auto auto auto]">
-        <motion.img
-          ref={refPhoto}
-          initial={{ opacity: 0, x: "-100%" }}
-          animate={{
-            opacity: photoIsInView ? 1 : 0,
-            x: photoIsInView ? 0 : "-100%",
-          }}
-          transition={{ duration: 1 }}
-          className="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 mx-auto w-1/3 lg:w-1/5 rounded-xl mt-6 md:mt-0"
-          src={img}
-          alt="Profile"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_auto]">
         <motion.div
           initial={{ opacity: 0, x: "100%" }}
           animate={{
@@ -40,33 +25,31 @@ export default function About() {
           }}
           transition={{ duration: 1 }}
           ref={refInfo}
-          className="md:col-start-1 md:col-end-3 md:row-start-2 md:row-end-3 flex lg:text-lg flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:w-full md:w-2/3 py-5 mx-auto px-7"
+          className="flex flex-col gap-1 px-7 py-5 mx-auto w-full max-w-3xl lg:grid lg:grid-cols-2 lg:gap-x-8 lg:text-lg md:px-10 md:py-8"
         >
           <div className="py-2">
             <span className="font-semibold">Name: </span>
             <span className="font-normal text-gray-500">
-              {" "}
-              Vedant Milind Otari{" "}
+              Vedant Milind Otari
             </span>
           </div>
           <div className="py-2">
             <span className="font-semibold">Email: </span>
             <span className="font-normal text-gray-500">
-              {" "}
               <a
                 rel="noreferrer"
                 href="mailto:vedantmotari24@gmail.com"
                 target="_blank"
               >
                 <i> vedantmotari24@gmail.com</i>
-              </a>{" "}
+              </a>
             </span>
           </div>
           <div className="py-2">
             <span className="font-semibold">Location: </span>
             <span className="font-normal text-gray-500">
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://maps.app.goo.gl/kGFDNpo88pMtSsc87"
                 target="_blank"
               >
@@ -79,7 +62,7 @@ export default function About() {
             <span className="font-semibold">Degree: </span>
             <span className="font-normal text-gray-500">
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://drive.google.com/file/d/1vbrvwHnIUqgse3--5G3Czbe892FofvtD/view?usp=sharing"
                 target="_blank"
               >
@@ -92,7 +75,7 @@ export default function About() {
             <span className="font-semibold">Education: </span>
             <span className="font-normal text-gray-500">
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.kitcoek.in/"
                 target="_blank"
               >
@@ -103,8 +86,12 @@ export default function About() {
           </div>
           <div className="py-2">
             <span className="font-semibold">Passout: </span>
+            <span className="font-normal text-gray-500"> 2023 </span>
+          </div>
+          <div className="py-2">
+            <span className="font-semibold">Currently Working: </span>
             <span className="font-normal text-gray-500">
-              {" "}2023{" "}
+              Mobifilia Software India LLP (2+ yrs)
             </span>
           </div>
         </motion.div>
@@ -116,52 +103,60 @@ export default function About() {
             x: linkIsInView ? 0 : "-100%",
           }}
           transition={{ duration: 1 }}
-          className="md:col-start-1 items-center md:col-end-4 md:row-start-3 md:row-end-4 bg-secondary flex w-full justify-around text-3xl"
+          className="order-3 items-center py-2 bg-secondary flex w-full justify-around text-4xl md:col-span-2"
         >
           <a
-            href="https://www.linkedin.com/in/vedant-otari/ "
-            rel="noreferrer"
+            href="https://www.linkedin.com/in/vedant-otari/"
             target="_blank"
+            rel="noopener noreferrer"
             title="LinkedIn"
-            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 
+                      group transition-transform duration-300 hover:scale-125"
           >
-            <FaLinkedin className="text-white w-full group-active:text-blue-500 duration-300" />
+            <FaLinkedin className="text-white transition-colors duration-300 group-hover:text-blue-400" />
           </a>
           <a
-            href="https://github.com/Vedant-Otari// "
-            rel="noreferrer"
+            href="https://github.com/Vedant-Otari/"
             target="_blank"
+            rel="noopener noreferrer"
             title="Github"
-            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 
+                      group transition-transform duration-300 hover:scale-125"
           >
-            <FaGithubSquare className="text-white group-active:text-gray-400 duration-300 " />
+            <FaGithubSquare className="text-white transition-colors duration-300 group-hover:text-gray-200" />
           </a>
           <a
-            href="https://leetcode.com/Vedant_Otari/ "
-            rel="noreferrer"
+            href="https://leetcode.com/Vedant_Otari/"
             target="_blank"
+            rel="noopener noreferrer"
             title="Leetcode"
-            className="w-full flex justify-center px-5 py-3 md:py-4 group active:text-4xl"
+            className="w-full flex justify-center px-5 py-3 md:py-4 
+                      group transition-transform duration-300 hover:scale-125"
           >
-            <SiLeetcode className="text-white group-active:text-orange-500 duration-300 " />
+            <SiLeetcode className="text-white transition-colors duration-300 group-hover:text-amber-500" />
           </a>
         </motion.div>
         <motion.article
-        ref={refAbout}
-        initial={{ opacity: 0, x: "100%" }}
-        animate={{
-          opacity: aboutIsInView ? 1 : 0,
-          x: aboutIsInView ? 0 : "100%",
-        }}
-        transition={{ duration: 1 }}
-        className="md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-3 p-5 md:rounded-tl-3xl bg-tertiary flex items-center md:text-left md:p-10 text-white mx-auto md:text-xl text-center">
-          Passionate CSE graduate with expertise in web development. Dedicated to creating efficient and user-friendly applications.
+          ref={refAbout}
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{
+            opacity: aboutIsInView ? 1 : 0,
+            x: aboutIsInView ? 0 : "100%",
+          }}
+          transition={{ duration: 1 }}
+          className="mx-auto flex items-center bg-tertiary p-5 text-center text-white md:rounded-tl-xl md:p-10 md:text-left md:text-xl"
+        >
+          Software Developer with hands-on experience building scalable
+          full-stack applications using React, Node.js, Laravel, and Vue.js.
           <br />
           <br />
-          Skilled problem-solver with a strong understanding of software development methodologies and best practices.
+          Strong focus on designing RESTful APIs, optimizing database
+          performance, and developing efficient, maintainable systems.
           <br />
           <br />
-          Committed to enhancing organizational excellence, I aspire to embody the company culture, amplify my skills, and become an indispensable contributor.
+          Experienced in integrating third-party services like Stripe,
+          ShipStation, and SendGrid, with a focus on delivering reliable and
+          production-ready solutions.
         </motion.article>
       </div>
     </section>

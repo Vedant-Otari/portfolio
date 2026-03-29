@@ -1,4 +1,4 @@
-import React from "react";
+import defaultImage from "../assests/images/defaultImage.png";
 
 const ProjectDetail = ({ setShowModal, clickedProject }) => {
   return (
@@ -28,32 +28,27 @@ const ProjectDetail = ({ setShowModal, clickedProject }) => {
                   onClick={() => {
                     setShowModal(false);
                   }}
-                  className="p-1 ml-auto bg-transparent border-0 text-black float-right leading-none font-semibold outline-none focus:outline-none"
+                  className="pl-5 bg-transparent hover:text-red-500 border-0 text-4xl text-black font-semibold outline-none focus:outline-none"
                 >
-                  <span className=" text-black h-6 w-6 text-4xl block outline-none focus:outline-none">
-                    ×
-                  </span>
+                  x
                 </button>
               </div>
               {/*body*/}
               <div className="relative p-6 flex-auto overflow-y-auto max-h-[60vh]">
                 <div className="md:flex w-full">
-                  <img
+                 {clickedProject.image && <img 
                     className="w-full md:w-1/2 aspect-video object-contain"
-                    src={clickedProject.image}
+                    src={clickedProject.image || defaultImage}
                     alt={clickedProject.name}
-                  />
+                    onError={(e) => {
+                      e.currentTarget.src = defaultImage;
+                    }}
+                  />}
                   <div className="flex flex-col w-full p-5 text-lg">
-                    <p>
+                    {/* <p>
                       <span className="font-bold text-gray-700">Type:</span>{" "}
                       {clickedProject.type}{" "}
-                    </p>
-                    <p>
-                      <span className="font-bold text-gray-700">
-                        Contributers:
-                      </span>{" "}
-                      {clickedProject.contributers}{" "}
-                    </p>
+                    </p> */}
                     <p>
                       <span className="font-bold text-gray-700">Purpose:</span>{" "}
                       {clickedProject.purpose}{" "}
@@ -62,13 +57,15 @@ const ProjectDetail = ({ setShowModal, clickedProject }) => {
                       <span className="font-bold text-gray-700">
                         Technologies:{" "}
                       </span>
-                      {clickedProject.tech.map((t) => t + " ")}
+                      {clickedProject.tech.join(", ")}
                     </p>
                   </div>
                 </div>
-                <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                  {clickedProject.description}
-                </p>
+                <ul className="my-4 text-blueGray-500 text-lg leading-relaxed list-disc pl-5 space-y-1">
+                  {clickedProject.description.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
